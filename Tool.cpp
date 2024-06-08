@@ -15,7 +15,6 @@ void Decode()
     std::cin >> Word;
 
     std::transform(Pass.begin(), Pass.end(), Pass.begin(), ::toupper);
-    std::transform(Word.begin(), Word.end(), Word.begin(), ::toupper);
 
     std::string Password;
     if(Pass.length() != Word.length())

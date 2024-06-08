@@ -17,6 +17,7 @@ int Do()
     std::cout << "What is '" << Bank[Q] << "'? >";
     std::string A;
     std::cin >> A;
+    std::transform(A.begin(), A.end(), A.begin(), ::toupper);
     if (encryptionMap[A] == Bank[Q])
     {
         std::cout << "Good!\n\n";
